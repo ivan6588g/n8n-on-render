@@ -15,4 +15,22 @@ services:
       - key: N8N_BASIC_AUTH_PASSWORD
         value: Esetnod32#
       - key: WEBHOOK_URL
-        value: https://n8n.onrender.com/
+        value: https://n8n.onrender.com
+
+      # Configuración de base de datos PostgreSQL
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        value: dpg-d1dojv3ipnbc73dgro6g-a
+      - key: DB_POSTGRESDB_PORT
+        value: "5432"
+      - key: DB_POSTGRESDB_DATABASE
+        value: n8n_db_jue7
+      - key: DB_POSTGRESDB_USER
+        value: n8n_db_jue7_user
+      - key: DB_POSTGRESDB_PASSWORD
+        value: 4VafboCx9EfwBqDfGqWK8xVprGUyEa1K
+
+      # Forzar versión estable de Node.js
+      - key: NODE_VERSION
+        value: "22"
