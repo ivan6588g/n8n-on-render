@@ -30,3 +30,7 @@ services:
         value: n8n_db_jue7_user
       - key: DB_POSTGRESDB_PASSWORD
         value: "4VafboCx9EfwBqDfGqWK8xVprGUyEa1K"
+      - key: N8N_DATABASE_MIGRATIONS
+        value: "true"
+      - key: DB_TYPE
+        value: postgresdb
