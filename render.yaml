@@ -13,7 +13,7 @@ services:
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: "Esetnod32#"
+        value: "Esetnod32"
       - key: WEBHOOK_URL
         value: https://n8n-on-render-0g18.onrender.com
       - key: NODE_VERSION
