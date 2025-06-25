@@ -16,8 +16,6 @@ services:
         value: Esetnod32#
       - key: WEBHOOK_URL
         value: https://n8n.onrender.com
-
-      # Configuración de base de datos PostgreSQL
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
@@ -30,7 +28,5 @@ services:
         value: n8n_db_jue7_user
       - key: DB_POSTGRESDB_PASSWORD
         value: 4VafboCx9EfwBqDfGqWK8xVprGUyEa1K
-
-      # Forzar versión estable de Node.js
       - key: NODE_VERSION
         value: "22"
