@@ -13,9 +13,11 @@ services:
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: Esetnod32#
+        value: "Esetnod32#"
       - key: WEBHOOK_URL
-        value: https://n8n.onrender.com
+        value: https://n8n-on-render-0g18.onrender.com
+      - key: NODE_VERSION
+        value: "18"
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
@@ -27,6 +29,4 @@ services:
       - key: DB_POSTGRESDB_USER
         value: n8n_db_jue7_user
       - key: DB_POSTGRESDB_PASSWORD
-        value: 4VafboCx9EfwBqDfGqWK8xVprGUyEa1K
-      - key: NODE_VERSION
-        value: "22"
+        value: "4VafboCx9EfwBqDfGqWK8xVprGUyEa1K"
