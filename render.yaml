@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: n8n
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx n8n
+    envVars:
+      - key: GENERIC_TIMEZONE
+        value: America/Mexico_City
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "Esetnod32#"
+      - key: WEBHOOK_URL
+        value: https://n8n-on-render-0g18.onrender.com
+      - key: NODE_VERSION
+        value: "18"
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        value: dpg-d1dojv3ipnbc73dgro6g-a
+      - key: DB_POSTGRESDB_PORT
+        value: "5432"
+      - key: DB_POSTGRESDB_DATABASE
+        value: n8n_db_jue7
+      - key: DB_POSTGRESDB_USER
+        value: n8n_db_jue7_user
+      - key: DB_POSTGRESDB_PASSWORD
+        value: "4VafboCx9EfwBqDfGqWK8xVprGUyEa1K"
