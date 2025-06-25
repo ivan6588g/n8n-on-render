@@ -1,0 +1,10 @@
+{
+  "name": "n8n-on-render",
+  "private": true,
+  "scripts": {
+    "start": "n8n"
+  },
+  "dependencies": {
+    "n8n": "^1.99.1"
+  }
+}
