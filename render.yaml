@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: n8n
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npx n8n
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
+    envVars:
+      - key: GENERIC_TIMEZONE
+        value: America/Mexico_City
+
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "Esetnod32#"
+
+      - key: WEBHOOK_URL
+        value: https://n8n-on-render-0g18.onrender.com
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-on-render-0g18.onrender.com
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: NODE_VERSION
+        value: "18"
+
+      - key: N8N_ENCRYPTION_KEY
+        value: "d1e8635a2c5b4538a789e8f2cd72894a39fd97dba9dbbc8b5ed8bcd86b0ae990"
+
+      - key: N8N_SKIP_WEBHOOK_DEREGISTRATION_SHUTDOWN
+        value: "true"
+      - key: N8N_DIAGNOSTICS_ENABLED
+        value: "false"
